@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="aside">
+        <div class="logo">
+          <span class="icon"></span>
+          <div class="label">Indonesia Mandiri</div>
+        </div>
+        <ul class="nav">
+          <li class="list">
+            <a href="#" class="link">
+              <span class="icon"></span>
+              <span class="label">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="link">
+              <span class="icon"></span>
+              <span class="label">Berita</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="link">
+              <span class="icon"></span>
+              <span class="label">Faskas</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main class="content">
+        <header class="header">
+          <ul class="header_links">
+            <li class="list">
+              <menu class="menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </menu>
+            </li>
+            <li class="list"><a href="#" class="link">Logout</a></li>
+          </ul>
+        </header>
+        <section class="details">
+          <ul class="breedcrumbs">
+            <li class="list">
+              <h2 class="title">Dashboard</h2>
+            </li>
+            <li class="list">Home/Dashboard</li>
+          </ul>
+
+          <button class="btn btn_primary">
+            <a href="#" class="link">Tambah</a>
+          </button>
+
+          <div class="dashboard">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <footer class="footer">&copy; Copyright 2023 by Agus Salim.</footer>
+        </section>
+      </main>
+    </div>
+    <script>
+      document.querySelector(".menu").addEventListener("click", () => {
+        document.querySelector(".aside").classList.toggle("active");
+        document.querySelector(".content").classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
