@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+#board {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  border: 3px solid black;
+  position: relative;
+}
+
+.cell {
+  border: 1px solid #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.black {
+  background: black;
+  color: white;
+}
+
+.white {
+  background: white;
+}
+
+.player {
+  background: orange;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  transition: 0.2s linear;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+#dice {
+  font-size: 40px;
+  margin: 10px;
+}
