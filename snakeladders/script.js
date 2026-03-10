@@ -214,9 +214,12 @@ class Player {
 // Terakhir
 class App {
   constructor() {
+    let username = prompt("Masukkan nama player:", "Player 1");
+    if (!username || username.trim() === "") username = "Player";
+
     this.isRolling = false;
     this.board = new Board(10);
-    this.player = new Player(this.board);
+    this.player = new Player(this.board, username);
   }
 
   async rollDice() {
@@ -250,3 +253,9 @@ class App {
     return new Promise((res) => setTimeout(res, ms));
   }
 }
+
+const game = new App();
+
+document
+  .querySelector("#roll")
+  .addEventListener("click", () => game.rollDice());
